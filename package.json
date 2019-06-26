@@ -1,0 +1,26 @@
+{
+  "name": "platform-directories",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "author": "Ben Goldberg <benjamin.goldberg@enel.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.2.0",
+    "node-pre-gyp": "^0.13.0",
+    "node-pre-gyp-github": "^1.4.3"
+  },
+  "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "package": "node-pre-gyp package",
+    "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish"
+  },
+  "binary": {
+    "module_name": "index",
+    "host": "https://github.com/zethra/platform-directories/releases/download/",
+    "remote_path": "{version}",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
+    "module_path": "./native",
+    "pkg_path": "."
+  }
+}
