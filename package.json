@@ -5,6 +5,14 @@
   "main": "lib/index.js",
   "author": "Ben Goldberg <benjamin.goldberg@enel.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zethra/platform-directories.git"
+  },
+  "files": [
+    "native/index.node",
+    "lib"
+  ],
   "dependencies": {
     "neon-cli": "^0.2.0",
     "node-pre-gyp": "^0.13.0",

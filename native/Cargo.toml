@@ -5,6 +5,7 @@ authors = ["Ben Goldberg <benjamin.goldberg@enel.com>"]
 license = "MIT"
 build = "build.rs"
 exclude = ["artifacts.json", "index.node"]
+edition = "2018"
 
 [lib]
 name = "platform_directories"
@@ -15,3 +16,4 @@ neon-build = "0.2.0"
 
 [dependencies]
 neon = "0.2.0"
+directories = "2.0.1"
