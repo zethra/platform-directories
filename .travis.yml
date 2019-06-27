@@ -21,7 +21,8 @@ before_install:
       source "$HOME/.cargo/env"
   - node -v
   - npm -v
-  - rustup show
+  - rustc -Vv
+  - cargo -Vv
   - yarn global add yarn@latest
   - yarn
 
