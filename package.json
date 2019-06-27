@@ -22,7 +22,8 @@
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "neon build --release && node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
-    "test": "jest"
+    "test": "neon build --release",
+    "jest": "neon build --release && jest"
   },
   "binary": {
     "module_name": "index",
