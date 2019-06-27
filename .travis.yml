@@ -36,6 +36,7 @@ deploy:
   provider: releases
   api_key:
     secure: wef94QCJytKqokhilutHcUktGmL1eID6vyB/FzXIysGCPxTyIwFJvWVGOTX2WLT13lDEocuY4QldiKdI7Zw+9RMgDmnM2VODsp+EUtim5iy1zHDX+iCKaB93SswF9ZvMSZz5IH5kGZYKgTPFrMjgJxCcajiwWTz+5zjQ2zEGZ3AnPiLpeH6YABr/bxu5fUA53suKiY25ICHNdwotUTeVBMF/+PvCova+3ao2ynHQfiFPOgpVmth/4+JxKiEcJ2lsO0aqUgemJyKF9YPEn7QoqU/DAk86yTviUWVdnCwRdGAMslankvoxIAhLWHa7fIdVvPUN8Dcp8QkgzgjxY7pu4PuXuo53QeH/UMc4O28yzMPTA2SaKO1dF4N6mBr+1IYPMH4w3J0r6Wpn7GFR9CvgyfoKpy0btXVXYuNoAnkf4qBL5VhwZoeYtOqZm4Ytxl2jLB5woTKonzfcOtM5V4CraDAV8zsym/+YLvT7KjW5qEEdeHrKaFyRE4RhwcquoBG9Ak3LKiueoOK/jlIztB9UdCgxDQO/ZiqmmzYtZ1lxG7AMDEY42YyS7RpWJezshMlT83sAgoiBLwmslqbz+d6DEWk1vG5PwbJ6XMFzP9sZO5UQvqnmrm9jRe/KGk3M9Las/vtXJNfXGjGYyLKSgTrN5cJB5cbvu6aI0YZF43GquMA=
+  file_glob: true
   file: build/stage/**/*
   on:
     repo: zethra/platform-directories
@@ -54,7 +55,7 @@ before_cache:
 branches:
   only:
     # release tags
-    - /^v\d+\.\d+\.\d+.*$/
+    - /^\d+\.\d+\.\d+.*$/
     - master
 
 notifications:
