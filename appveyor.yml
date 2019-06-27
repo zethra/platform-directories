@@ -25,10 +25,6 @@ before_deploy:
 
 cache:
   - C:\Users\appveyor\.cargo\registry
-  - target
-
-cache:
-  - C:\Users\appveyor\.cargo\registry
   - native/target
 
 # Building is done in the test phase, so we disable Appveyor's build phase.
