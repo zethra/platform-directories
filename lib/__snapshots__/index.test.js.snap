@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`baseDirs 1`] = `
+Object {
+  "cacheDir": "/Users/benjamin.goldberg/Library/Caches",
+  "configDir": "/Users/benjamin.goldberg/Library/Preferences",
+  "dataDir": "/Users/benjamin.goldberg/Library/Application Support",
+  "dataLocalDir": "/Users/benjamin.goldberg/Library/Application Support",
+  "executableDir": null,
+  "homeDir": "/Users/benjamin.goldberg",
+  "runtimeDir": null,
+}
+`;
+
+exports[`projectDirs path 1`] = `
+Object {
+  "cacheDir": "/Users/benjamin.goldberg/Library/Caches/project_name",
+  "configDir": "/Users/benjamin.goldberg/Library/Preferences/project_name",
+  "dataDir": "/Users/benjamin.goldberg/Library/Application Support/project_name",
+  "dataLocalDir": "/Users/benjamin.goldberg/Library/Application Support/project_name",
+  "projectPath": "project_name",
+  "runtimeDir": null,
+}
+`;
+
+exports[`projectDirs tripple 1`] = `
+Object {
+  "cacheDir": "/Users/benjamin.goldberg/Library/Caches/com.example.Example-inc..example-app",
+  "configDir": "/Users/benjamin.goldberg/Library/Preferences/com.example.Example-inc..example-app",
+  "dataDir": "/Users/benjamin.goldberg/Library/Application Support/com.example.Example-inc..example-app",
+  "dataLocalDir": "/Users/benjamin.goldberg/Library/Application Support/com.example.Example-inc..example-app",
+  "projectPath": "com.example.Example-inc..example-app",
+  "runtimeDir": null,
+}
+`;
+
+exports[`userDirs 1`] = `
+Object {
+  "audioDir": "/Users/benjamin.goldberg/Music",
+  "desktopDir": "/Users/benjamin.goldberg/Desktop",
+  "documentDir": "/Users/benjamin.goldberg/Documents",
+  "downloadDir": "/Users/benjamin.goldberg/Downloads",
+  "fontDir": "/Users/benjamin.goldberg/Library/Fonts",
+  "homeDir": "/Users/benjamin.goldberg",
+  "pictureDir": "/Users/benjamin.goldberg/Pictures",
+  "publicDir": "/Users/benjamin.goldberg/Public",
+  "tempalateDir": null,
+  "videoDir": "/Users/benjamin.goldberg/Movies",
+}
+`;

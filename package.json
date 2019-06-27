@@ -22,7 +22,7 @@
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "neon build --release && node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish",
-    "test": "neon build --release"
+    "test": "jest"
   },
   "binary": {
     "module_name": "index",
@@ -32,5 +32,8 @@
     "module_path": "./native",
     "pkg_path": "."
   },
-  "types": "lib/types/index.d.ts"
+  "types": "lib/types/index.d.ts",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
