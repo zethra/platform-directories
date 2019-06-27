@@ -9,7 +9,7 @@ install:
   - ps: $Env:PATH += ';C:\msys64\mingw64\bin'
   - curl -sSf -o rustup-init.exe https://win.rustup.rs/x86_64
   # - rustup-init.exe -y --default-host x86_64-pc-windows-gnu --default-toolchain stable
-  - rustup-init.exe -y --default-host i386-pc-windows-msvc --default-toolchain stable
+  - rustup-init.exe -y --default-host i686-pc-windows-msvc --default-toolchain stable
   - set PATH=%PATH%;C:\Users\appveyor\.cargo\bin
   - rustc -Vv
   - cargo -Vv
