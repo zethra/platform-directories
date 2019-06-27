@@ -32,5 +32,6 @@ export interface UserDirs {
 }
 
 export declare function baseDirs(): BaseDirs;
-export declare function projectDirs(): ProjectDirs;
+export declare function projectDirs(pathOrquaifier: string,
+    organization?: string, application?: string): ProjectDirs;
 export declare function userDirs(): UserDirs;
