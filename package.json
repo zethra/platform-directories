@@ -1,9 +1,9 @@
 {
   "name": "platform-directories",
   "version": "0.2.0",
-  "description": "",
+  "description": "A Library to find where to put app configs and various system directories",
   "main": "lib/index.js",
-  "author": "Ben Goldberg <benjamin.goldberg@enel.com>",
+  "author": "Ben Goldberg <jediben97@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
