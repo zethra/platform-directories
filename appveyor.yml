@@ -18,9 +18,7 @@ install:
   - yarn
 
 test_script:
-  - if [%APPVEYOR_REPO_TAG%]==[false] (
-    yarn test
-  )
+  - yarn test
 
 before_deploy:
   - yarn package
